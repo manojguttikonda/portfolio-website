@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="dark-mode">
+<body>
     <div class="cursor-glow"></div>
 
     <header class="glass-header">
@@ -35,11 +35,11 @@
                 <li><a href="#contact">Contact</a></li>
                 <li><button id="theme-toggle" aria-label="Toggle Dark Mode"><i class="fas fa-sun"></i></button></li>
             </ul>
-            <div class="burger">
+            <button class="burger" aria-label="Open navigation menu" aria-expanded="false">
                 <div class="line1"></div>
                 <div class="line2"></div>
                 <div class="line3"></div>
-            </div>
+            </button>
         </nav>
     </header>
 
@@ -58,11 +58,10 @@
                     <a href="#experience" class="btn secondary-btn">View Work</a>
                 </div>
                 <div class="social-links">
-                    <a href="https://www.linkedin.com/in/manoj-guttikonda-6121b02a8" target="_blank"
+                    <a href="https://www.linkedin.com/in/manoj-guttikonda-6121b02a8" target="_blank" rel="noopener noreferrer"
                         aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                     <a href="mailto:Guttikondamanoj@icloud.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
-                    <!-- Placeholder for GitHub if available later -->
-                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/manojguttikonda" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
                 </div>
             </div>
             <div class="hero-visual">
@@ -366,7 +365,7 @@
                 </div>
 
                 <h3 class="subsection-title" style="margin-top: 3rem; font-size: 1.5rem;">Orchestration Tools</h3>
-                <div class="tools-grid" style="grid-template-columns: repeat(2, 1fr);">
+                <div class="tools-grid tools-grid-2col">
                     <div class="tool-card github-actions" style="padding: 1.5rem;">
                         <div class="tool-icon" style="font-size: 2rem;"><i class="fab fa-github"></i></div>
                         <div>
@@ -395,7 +394,7 @@
                         <i class="fas fa-phone-alt"></i>
                         <div>
                             <h4>Mobile</h4>
-                            <p>416-839-5987</p>
+                            <a href="tel:+14168395987" class="contact-phone">416-839-5987</a>
                         </div>
                     </div>
                     <div class="info-item">
@@ -446,8 +445,8 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Manoj Guttikonda. Built with <span class="heart">❤</span> & Code. <span
-                style="opacity: 0.5; font-size: 0.8rem; margin-left: 10px;">v1.0.0</span></p>
+        <p>&copy; <span id="footer-year"></span> Manoj Guttikonda. Built with <span class="heart">❤</span> &amp; Code. <span
+                style="opacity: 0.5; font-size: 0.8rem; margin-left: 10px;">v1.1.0</span></p>
     </footer>
 
     <script src="script.js"></script>
